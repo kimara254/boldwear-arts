@@ -2,316 +2,561 @@
   {
     "id": "african-city",
     "title": "African City",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-city.jpg",
-    "room_img": "assets/mockups/african-city-room.jpg",
+    "room_img": "assets/mockups/african-city-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-city-room-gallery.jpg",
+      "loft": "assets/mockups/african-city-room-loft.jpg",
+      "lounge": "assets/mockups/african-city-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African City) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African City) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-coast-dawn",
     "title": "African Coast Dawn",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-coast-dawn.jpg",
-    "room_img": "assets/mockups/african-coast-dawn-room.jpg",
+    "room_img": "assets/mockups/african-coast-dawn-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-coast-dawn-room-gallery.jpg",
+      "loft": "assets/mockups/african-coast-dawn-room-loft.jpg",
+      "lounge": "assets/mockups/african-coast-dawn-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Coast Dawn) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Coast Dawn) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-coast-dawn-retry",
-    "title": "African Coast Dawn RETRY",
-    "series": "African celestial elegance",
+    "title": "African Coast Dawn (Study)",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-coast-dawn-retry.jpg",
-    "room_img": "assets/mockups/african-coast-dawn-retry-room.jpg",
+    "room_img": "assets/mockups/african-coast-dawn-retry-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-coast-dawn-retry-room-gallery.jpg",
+      "loft": "assets/mockups/african-coast-dawn-retry-room-loft.jpg",
+      "lounge": "assets/mockups/african-coast-dawn-retry-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Coast Dawn RETRY) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Luminous coastal horizon study rooted in African surrealism and atmospheric calm. Available as museum-grade print via Pictorem."
   },
   {
     "id": "african-festival",
     "title": "African Festival",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-festival.jpg",
-    "room_img": "assets/mockups/african-festival-room.jpg",
+    "room_img": "assets/mockups/african-festival-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-festival-room-gallery.jpg",
+      "loft": "assets/mockups/african-festival-room-loft.jpg",
+      "lounge": "assets/mockups/african-festival-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Festival) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Festival) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-funeral-ritual",
     "title": "African Funeral Ritual",
-    "series": "African Culture Community Celebration",
+    "series": "African Culture & Community Celebration",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-funeral-ritual.jpg",
-    "room_img": "assets/mockups/african-funeral-ritual-room.jpg",
+    "room_img": "assets/mockups/african-funeral-ritual-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-funeral-ritual-room-gallery.jpg",
+      "loft": "assets/mockups/african-funeral-ritual-room-loft.jpg",
+      "lounge": "assets/mockups/african-funeral-ritual-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Funeral Ritual) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Funeral Ritual) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-river",
     "title": "African River",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-river.jpg",
-    "room_img": "assets/mockups/african-river-room.jpg",
-    "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African River) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "room_img": "assets/mockups/african-river-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-river-room-gallery.jpg",
+      "loft": "assets/mockups/african-river-room-loft.jpg",
+      "lounge": "assets/mockups/african-river-room-lounge.jpg"
+    },
+    "pictorem_url": "https://www.pictorem.com/2815616/celestial-desert-elegance-1/",
+    "description": "Contemporary African fine art work (African River) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-river-2",
     "title": "African River (II)",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-river-2.jpg",
-    "room_img": "assets/mockups/african-river-2-room.jpg",
-    "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African River (II)) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "room_img": "assets/mockups/african-river-2-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-river-2-room-gallery.jpg",
+      "loft": "assets/mockups/african-river-2-room-loft.jpg",
+      "lounge": "assets/mockups/african-river-2-room-lounge.jpg"
+    },
+    "pictorem_url": "https://www.pictorem.com/2815616/celestial-desert-elegance-1/",
+    "description": "Contemporary African fine art work (African River (II)) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-surrealist",
     "title": "African Surrealist",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-surrealist.jpg",
-    "room_img": "assets/mockups/african-surrealist-room.jpg",
+    "room_img": "assets/mockups/african-surrealist-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-surrealist-room-gallery.jpg",
+      "loft": "assets/mockups/african-surrealist-room-loft.jpg",
+      "lounge": "assets/mockups/african-surrealist-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Surrealist) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Surrealist) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-textile",
     "title": "African Textile",
-    "series": "African Spirituality Ancestral Heritage.",
+    "series": "African Spirituality & Ancestral Heritage",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-textile.jpg",
-    "room_img": "assets/mockups/african-textile-room.jpg",
+    "room_img": "assets/mockups/african-textile-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-textile-room-gallery.jpg",
+      "loft": "assets/mockups/african-textile-room-loft.jpg",
+      "lounge": "assets/mockups/african-textile-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Textile) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Textile) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-village",
     "title": "African Village",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-village.jpg",
-    "room_img": "assets/mockups/african-village-room.jpg",
+    "room_img": "assets/mockups/african-village-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-village-room-gallery.jpg",
+      "loft": "assets/mockups/african-village-room-loft.jpg",
+      "lounge": "assets/mockups/african-village-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Village) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Village) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-wedding-river",
     "title": "African Wedding River",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-wedding-river.jpg",
-    "room_img": "assets/mockups/african-wedding-river-room.jpg",
+    "room_img": "assets/mockups/african-wedding-river-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-wedding-river-room-gallery.jpg",
+      "loft": "assets/mockups/african-wedding-river-room-loft.jpg",
+      "lounge": "assets/mockups/african-wedding-river-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Wedding River) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Wedding River) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-woman",
     "title": "African Woman",
-    "series": "African Identity Beauty Cultural Expression",
+    "series": "African Identity, Beauty & Cultural Expression",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-woman.jpg",
-    "room_img": "assets/mockups/african-woman-room.jpg",
+    "room_img": "assets/mockups/african-woman-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-woman-room-gallery.jpg",
+      "loft": "assets/mockups/african-woman-room-loft.jpg",
+      "lounge": "assets/mockups/african-woman-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Woman) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Woman) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "african-workshop",
     "title": "African Workshop",
-    "series": "African Culture Community Celebration",
+    "series": "African Culture & Community Celebration",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/african-workshop.jpg",
-    "room_img": "assets/mockups/african-workshop-room.jpg",
+    "room_img": "assets/mockups/african-workshop-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/african-workshop-room-gallery.jpg",
+      "loft": "assets/mockups/african-workshop-room-loft.jpg",
+      "lounge": "assets/mockups/african-workshop-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African Workshop) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African Workshop) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ancient-baobab",
     "title": "Ancient Baobab",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ancient-baobab.jpg",
-    "room_img": "assets/mockups/ancient-baobab-room.jpg",
+    "room_img": "assets/mockups/ancient-baobab-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ancient-baobab-room-gallery.jpg",
+      "loft": "assets/mockups/ancient-baobab-room-loft.jpg",
+      "lounge": "assets/mockups/ancient-baobab-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ancient Baobab) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ancient Baobab) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ceremonial-dancer",
     "title": "Ceremonial Dancer",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ceremonial-dancer.jpg",
-    "room_img": "assets/mockups/ceremonial-dancer-room.jpg",
+    "room_img": "assets/mockups/ceremonial-dancer-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ceremonial-dancer-room-gallery.jpg",
+      "loft": "assets/mockups/ceremonial-dancer-room-loft.jpg",
+      "lounge": "assets/mockups/ceremonial-dancer-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Dancer) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Dancer) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ceremonial-gathering",
     "title": "Ceremonial Gathering",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ceremonial-gathering.jpg",
-    "room_img": "assets/mockups/ceremonial-gathering-room.jpg",
+    "room_img": "assets/mockups/ceremonial-gathering-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ceremonial-gathering-room-gallery.jpg",
+      "loft": "assets/mockups/ceremonial-gathering-room-loft.jpg",
+      "lounge": "assets/mockups/ceremonial-gathering-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Gathering) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Gathering) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ceremonial-landscape",
     "title": "Ceremonial Landscape",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ceremonial-landscape.jpg",
-    "room_img": "assets/mockups/ceremonial-landscape-room.jpg",
+    "room_img": "assets/mockups/ceremonial-landscape-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ceremonial-landscape-room-gallery.jpg",
+      "loft": "assets/mockups/ceremonial-landscape-room-loft.jpg",
+      "lounge": "assets/mockups/ceremonial-landscape-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Landscape) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Landscape) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ceremonial-procession",
     "title": "Ceremonial Procession",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ceremonial-procession.jpg",
-    "room_img": "assets/mockups/ceremonial-procession-room.jpg",
+    "room_img": "assets/mockups/ceremonial-procession-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ceremonial-procession-room-gallery.jpg",
+      "loft": "assets/mockups/ceremonial-procession-room-loft.jpg",
+      "lounge": "assets/mockups/ceremonial-procession-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Procession) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Procession) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "ceremonial-procession-2",
     "title": "Ceremonial Procession (II)",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/ceremonial-procession-2.jpg",
-    "room_img": "assets/mockups/ceremonial-procession-2-room.jpg",
+    "room_img": "assets/mockups/ceremonial-procession-2-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/ceremonial-procession-2-room-gallery.jpg",
+      "loft": "assets/mockups/ceremonial-procession-2-room-loft.jpg",
+      "lounge": "assets/mockups/ceremonial-procession-2-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Procession (II)) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Procession (II)) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "coastal-street",
     "title": "Coastal Street",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/coastal-street.jpg",
-    "room_img": "assets/mockups/coastal-street-room.jpg",
+    "room_img": "assets/mockups/coastal-street-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/coastal-street-room-gallery.jpg",
+      "loft": "assets/mockups/coastal-street-room-loft.jpg",
+      "lounge": "assets/mockups/coastal-street-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Coastal Street) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Coastal Street) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "east-african-rite",
     "title": "East African Rite",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/east-african-rite.jpg",
-    "room_img": "assets/mockups/east-african-rite-room.jpg",
+    "room_img": "assets/mockups/east-african-rite-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/east-african-rite-room-gallery.jpg",
+      "loft": "assets/mockups/east-african-rite-room-loft.jpg",
+      "lounge": "assets/mockups/east-african-rite-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (East African Rite) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (East African Rite) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "elegant-woman",
     "title": "Elegant Woman",
-    "series": "African Identity Beauty Cultural Expression",
+    "series": "African Identity, Beauty & Cultural Expression",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/elegant-woman.jpg",
-    "room_img": "assets/mockups/elegant-woman-room.jpg",
+    "room_img": "assets/mockups/elegant-woman-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/elegant-woman-room-gallery.jpg",
+      "loft": "assets/mockups/elegant-woman-room-loft.jpg",
+      "lounge": "assets/mockups/elegant-woman-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Elegant Woman) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Elegant Woman) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "harvest-celebration",
     "title": "Harvest Celebration",
-    "series": "African Culture Community Celebration",
+    "series": "African Culture & Community Celebration",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/harvest-celebration.jpg",
-    "room_img": "assets/mockups/harvest-celebration-room.jpg",
+    "room_img": "assets/mockups/harvest-celebration-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/harvest-celebration-room-gallery.jpg",
+      "loft": "assets/mockups/harvest-celebration-room-loft.jpg",
+      "lounge": "assets/mockups/harvest-celebration-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Harvest Celebration) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Harvest Celebration) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "masked-dancers",
     "title": "Masked Dancers",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/masked-dancers.jpg",
-    "room_img": "assets/mockups/masked-dancers-room.jpg",
+    "room_img": "assets/mockups/masked-dancers-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/masked-dancers-room-gallery.jpg",
+      "loft": "assets/mockups/masked-dancers-room-loft.jpg",
+      "lounge": "assets/mockups/masked-dancers-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Masked Dancers) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Masked Dancers) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "masquerade-village",
     "title": "Masquerade Village",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/masquerade-village.jpg",
-    "room_img": "assets/mockups/masquerade-village-room.jpg",
+    "room_img": "assets/mockups/masquerade-village-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/masquerade-village-room-gallery.jpg",
+      "loft": "assets/mockups/masquerade-village-room-loft.jpg",
+      "lounge": "assets/mockups/masquerade-village-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Masquerade Village) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Masquerade Village) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "mysterious-ceremonial",
     "title": "Mysterious Ceremonial",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/mysterious-ceremonial.jpg",
-    "room_img": "assets/mockups/mysterious-ceremonial-room.jpg",
+    "room_img": "assets/mockups/mysterious-ceremonial-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/mysterious-ceremonial-room-gallery.jpg",
+      "loft": "assets/mockups/mysterious-ceremonial-room-loft.jpg",
+      "lounge": "assets/mockups/mysterious-ceremonial-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Mysterious Ceremonial) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Mysterious Ceremonial) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "pastoral-migration",
     "title": "Pastoral Migration",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/pastoral-migration.jpg",
-    "room_img": "assets/mockups/pastoral-migration-room.jpg",
+    "room_img": "assets/mockups/pastoral-migration-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/pastoral-migration-room-gallery.jpg",
+      "loft": "assets/mockups/pastoral-migration-room-loft.jpg",
+      "lounge": "assets/mockups/pastoral-migration-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Pastoral Migration) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Pastoral Migration) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "procession",
     "title": "Procession",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/procession.jpg",
-    "room_img": "assets/mockups/procession-room.jpg",
+    "room_img": "assets/mockups/procession-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/procession-room-gallery.jpg",
+      "loft": "assets/mockups/procession-room-loft.jpg",
+      "lounge": "assets/mockups/procession-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Procession) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Procession) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "rite-of-passage",
     "title": "Rite of Passage",
     "series": "African Art / Figurative Art / Dance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/rite-of-passage.jpg",
-    "room_img": "assets/mockups/rite-of-passage-room.jpg",
+    "room_img": "assets/mockups/rite-of-passage-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/rite-of-passage-room-gallery.jpg",
+      "loft": "assets/mockups/rite-of-passage-room-loft.jpg",
+      "lounge": "assets/mockups/rite-of-passage-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Rite of Passage) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Rite of Passage) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "secluded-settlement",
     "title": "Secluded Settlement",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/secluded-settlement.jpg",
-    "room_img": "assets/mockups/secluded-settlement-room.jpg",
+    "room_img": "assets/mockups/secluded-settlement-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/secluded-settlement-room-gallery.jpg",
+      "loft": "assets/mockups/secluded-settlement-room-loft.jpg",
+      "lounge": "assets/mockups/secluded-settlement-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Secluded Settlement) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Secluded Settlement) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "solitary-figure",
     "title": "Solitary Figure",
-    "series": "African Identity Beauty Cultural Expression",
+    "series": "African Identity, Beauty & Cultural Expression",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/solitary-figure.jpg",
-    "room_img": "assets/mockups/solitary-figure-room.jpg",
+    "room_img": "assets/mockups/solitary-figure-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/solitary-figure-room-gallery.jpg",
+      "loft": "assets/mockups/solitary-figure-room-loft.jpg",
+      "lounge": "assets/mockups/solitary-figure-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Solitary Figure) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Solitary Figure) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "surreal-landscape",
     "title": "Surreal Landscape",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/surreal-landscape.jpg",
-    "room_img": "assets/mockups/surreal-landscape-room.jpg",
+    "room_img": "assets/mockups/surreal-landscape-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/surreal-landscape-room-gallery.jpg",
+      "loft": "assets/mockups/surreal-landscape-room-loft.jpg",
+      "lounge": "assets/mockups/surreal-landscape-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Surreal Landscape) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Surreal Landscape) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "surreal-wedding-mountain",
     "title": "Surreal Wedding Mountain",
-    "series": "African celestial elegance",
+    "series": "African Celestial Elegance",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/surreal-wedding-mountain.jpg",
-    "room_img": "assets/mockups/surreal-wedding-mountain-room.jpg",
+    "room_img": "assets/mockups/surreal-wedding-mountain-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/surreal-wedding-mountain-room-gallery.jpg",
+      "loft": "assets/mockups/surreal-wedding-mountain-room-loft.jpg",
+      "lounge": "assets/mockups/surreal-wedding-mountain-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Surreal Wedding Mountain) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Surreal Wedding Mountain) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "tall-figure",
     "title": "Tall Figure",
-    "series": "African Identity Beauty Cultural Expression",
+    "series": "African Identity, Beauty & Cultural Expression",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/tall-figure.jpg",
-    "room_img": "assets/mockups/tall-figure-room.jpg",
+    "room_img": "assets/mockups/tall-figure-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/tall-figure-room-gallery.jpg",
+      "loft": "assets/mockups/tall-figure-room-loft.jpg",
+      "lounge": "assets/mockups/tall-figure-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Tall Figure) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Tall Figure) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   },
   {
     "id": "wedding-preparation",
     "title": "Wedding Preparation",
-    "series": "African Culture Community Celebration",
+    "series": "African Culture & Community Celebration",
+    "orientation": "Landscape",
+    "dimensions": "7488x4992px",
     "artwork_img": "assets/artworks/wedding-preparation.jpg",
-    "room_img": "assets/mockups/wedding-preparation-room.jpg",
+    "room_img": "assets/mockups/wedding-preparation-room-gallery.jpg",
+    "room_imgs": {
+      "gallery": "assets/mockups/wedding-preparation-room-gallery.jpg",
+      "loft": "assets/mockups/wedding-preparation-room-loft.jpg",
+      "lounge": "assets/mockups/wedding-preparation-room-lounge.jpg"
+    },
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Wedding Preparation) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Wedding Preparation) by BoldWearArts Collective. Landscape composition staged for modern spaces and printed to order via Pictorem."
   }
 ]
