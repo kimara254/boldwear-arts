@@ -33,109 +33,31 @@ KNOWN_URLS = {
 
 ROMANS = ["", " (II)", " (III)", " (IV)", " (V)"]
 
-# Build rich staged interiors (1600x1200) with wall molding, floor, rug, chair, side table & floral stems
-ROOM_SCENES = {
+# Real room templates normalized to 1600x1200 with wall placement geometry
+ROOM_CONFIGS = {
     "gallery": {
-        "cmd": [
-            "-size", "1600x1200", "xc:none",
-            # Warm plaster gallery wall + subtle spotlight glow
-            "(", "-size", "1600x920", "plasma:fractal", "-blur", "0x28", "-modulate", "115,22,100", ")",
-            "-geometry", "+0+0", "-compose", "over", "-composite",
-            "(", "-size", "1600x920", "radial-gradient:rgba(255,248,232,0.45)-rgba(165,148,124,0.35)", ")",
-            "-geometry", "+0+0", "-compose", "over", "-composite",
-            # Picture rail & baseboard molding
-            "-fill", "#dfd6c5", "-draw", "rectangle 0,105 1600,118",
-            "-fill", "#bfb39e", "-draw", "rectangle 0,118 1600,124",
-            "-fill", "#d8cebc", "-draw", "rectangle 0,898 1600,920",
-            # Hardwood floor & woven area rug
-            "-fill", "#8c6b4a", "-draw", "rectangle 0,920 1600,1200",
-            "-fill", "#765739", "-draw", "rectangle 0,920 1600,928",
-            "-fill", "#cfc3ae", "-draw", "roundrectangle 180,948 1420,1165 24,24",
-            "-fill", "#b8aa92", "-draw", "roundrectangle 205,962 1395,1150 18,18",
-            # Sculpted accent armchair on left
-            "-fill", "#2a2725", "-draw", "roundrectangle 255,770 435,965 28,28",
-            "-fill", "#3c3631", "-draw", "roundrectangle 240,855 450,955 20,20",
-            "-fill", "#191716", "-draw", "rectangle 270,955 284,1035 rectangle 420,955 434,1035",
-            # Side table & floral vase on right
-            "-fill", "#6d4c33", "-draw", "roundrectangle 1145,865 1335,885 8,8",
-            "-fill", "#4e3522", "-draw", "rectangle 1175,885 1190,1035 rectangle 1290,885 1305,1035",
-            # Ceramic vase + botanical leaves & blossoms
-            "-fill", "#c99b4b", "-draw", "ellipse 1240,825 36,44 0,360",
-            "-fill", "#35583c",
-            "-draw", "ellipse 1222,745 14,46 -22,338",
-            "-draw", "ellipse 1258,742 14,48 24,384",
-            "-draw", "ellipse 1240,725 12,54 0,360",
-            "-fill", "#e8d6b0",
-            "-draw", "circle 1212,715 1212,728",
-            "-draw", "circle 1268,712 1268,725",
-            "-draw", "circle 1240,685 1240,700",
-        ],
-        "frame_color": "#1d1a16",
-        "frame_px": "16x16",
-        "offset": "+0+175",
-        "max_box": "640x520",
+        "source": TEMPLATES_DIR / "room_living.jpg",
+        "prepared": TEMPLATES_DIR / "_prepared_living.jpg",
+        "frame_color": "#191715",
+        "frame_px": "14x14",
+        "max_box": "560x420",
+        "offset": "+0+145",
     },
     "loft": {
-        "cmd": [
-            "-size", "1600x1200", "xc:none",
-            # Sunlit architectural plaster wall
-            "(", "-size", "1600x920", "gradient:#f5f1e8-#e6dfd1", ")",
-            "-geometry", "+0+0", "-compose", "over", "-composite",
-            # Window light wash from upper right
-            "(", "-size", "1600x920", "radial-gradient:rgba(255,252,244,0.75)-rgba(255,252,244,0.0)", ")",
-            "-geometry", "+420-120", "-compose", "over", "-composite",
-            # Floor & textured linen rug
-            "-fill", "#b99a78", "-draw", "rectangle 0,920 1600,1200",
-            "-fill", "#e3dccd", "-draw", "roundrectangle 210,950 1390,1165 20,20",
-            # Low-profile bench on left
-            "-fill", "#d8cbb8", "-draw", "roundrectangle 240,860 510,900 12,12",
-            "-fill", "#5b432e", "-draw", "rectangle 265,900 280,1015 rectangle 470,900 485,1015",
-            # Planter & tall botanical stems on right
-            "-fill", "#d5cfc4", "-draw", "roundrectangle 1155,810 1325,975 18,18",
-            "-fill", "#2f5233",
-            "-draw", "ellipse 1215,710 18,65 -18,342",
-            "-draw", "ellipse 1265,700 18,72 18,378",
-            "-draw", "ellipse 1240,675 16,78 0,360",
-            "-fill", "#d9825b",
-            "-draw", "circle 1205,670 1205,684",
-            "-draw", "circle 1275,665 1275,679",
-        ],
+        "source": TEMPLATES_DIR / "room_studio.jpg",
+        "prepared": TEMPLATES_DIR / "_prepared_studio.jpg",
         "frame_color": "#c59b38",
-        "frame_px": "14x14",
-        "offset": "+0+175",
-        "max_box": "640x520",
+        "frame_px": "12x12",
+        "max_box": "560x420",
+        "offset": "+0+140",
     },
     "lounge": {
-        "cmd": [
-            "-size", "1600x1200", "xc:none",
-            # Deep collector salon wall with warm gallery sconce glow
-            "(", "-size", "1600x920", "radial-gradient:#3a322b-#161418", ")",
-            "-geometry", "+0+0", "-compose", "over", "-composite",
-            "(", "-size", "1600x920", "radial-gradient:rgba(212,175,55,0.22)-rgba(0,0,0,0.0)", ")",
-            "-geometry", "+0+140", "-compose", "over", "-composite",
-            # Dark timber floor & deep burgundy/gold accent rug
-            "-fill", "#221c18", "-draw", "rectangle 0,920 1600,1200",
-            "-fill", "#4a2523", "-draw", "roundrectangle 220,945 1380,1165 24,24",
-            "-fill", "#b8933a", "-draw", "roundrectangle 242,962 1358,1148 18,18",
-            "-fill", "#3b1d1c", "-draw", "roundrectangle 256,974 1344,1136 14,14",
-            # Velvet lounge chair & brass/wood table
-            "-fill", "#5a3d28", "-draw", "roundrectangle 255,785 445,965 32,32",
-            "-fill", "#745036", "-draw", "roundrectangle 240,865 460,955 18,18",
-            "-fill", "#2b2119", "-draw", "rectangle 272,955 286,1035 rectangle 422,955 436,1035",
-            "-fill", "#4a3322", "-draw", "roundrectangle 1150,860 1330,880 8,8",
-            "-fill", "#c9a248", "-draw", "rectangle 1234,880 1246,1035",
-            "-fill", "#8c2f2b", "-draw", "ellipse 1240,820 34,42 0,360",
-            "-fill", "#4a6b48",
-            "-draw", "ellipse 1218,742 14,44 -20,340",
-            "-draw", "ellipse 1262,740 14,46 22,382",
-            "-fill", "#f0c96b",
-            "-draw", "circle 1240,695 1240,710",
-            "-draw", "circle 1215,712 1215,725",
-        ],
-        "frame_color": "#0d0c0e",
-        "frame_px": "16x16",
-        "offset": "+0+175",
-        "max_box": "640x520",
+        "source": TEMPLATES_DIR / "room_lounge.jpg",
+        "prepared": TEMPLATES_DIR / "_prepared_lounge.jpg",
+        "frame_color": "#111012",
+        "frame_px": "14x14",
+        "max_box": "560x420",
+        "offset": "+0+145",
     },
 }
 
@@ -171,17 +93,28 @@ def get_dimensions(img_path: Path):
         orientation = "Square"
     return w, h, orientation
 
-def ensure_room_templates():
-    TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
-    paths = {}
-    for name, cfg in ROOM_SCENES.items():
-        tpl = TEMPLATES_DIR / f"wall_{name}.jpg"
-        # Always rebuild staged interior templates so scene upgrades apply cleanly
-        subprocess.run([MAGICK_BIN, *cfg["cmd"], "-background", "#1a1816", "-flatten", "-quality", "92", str(tpl)], check=True)
-        paths[name] = tpl
-    return paths
+def prepare_room_templates():
+    ready = {}
+    for name, cfg in ROOM_CONFIGS.items():
+        src = cfg["source"]
+        prep = cfg["prepared"]
+        if src.exists():
+            # Normalize real interior photo to 1600x1200 fill & keep natural photography
+            subprocess.run([
+                MAGICK_BIN, str(src),
+                "-auto-orient", "-strip",
+                "-resize", "1600x1200^",
+                "-gravity", "center",
+                "-extent", "1600x1200",
+                "-quality", "90",
+                str(prep)
+            ], check=True)
+            ready[name] = prep
+        else:
+            ready[name] = None
+    return ready
 
-def build_assets(src_img: Path, slug: str, templates: dict):
+def build_assets(src_img: Path, slug: str, room_bases: dict):
     art_out = ARTWORKS_DIR / f"{slug}.jpg"
     subprocess.run([
         MAGICK_BIN, str(src_img),
@@ -192,16 +125,19 @@ def build_assets(src_img: Path, slug: str, templates: dict):
     ], check=True)
 
     room_map = {}
-    for preset_name, cfg in ROOM_SCENES.items():
+    for preset_name, cfg in ROOM_CONFIGS.items():
+        base_img = room_bases.get(preset_name)
+        if not base_img:
+            continue
         room_out = MOCKUPS_DIR / f"{slug}-room-{preset_name}.jpg"
         subprocess.run([
-            MAGICK_BIN, str(templates[preset_name]),
+            MAGICK_BIN, str(base_img),
             "(",
                 str(art_out),
                 "-resize", f"{cfg['max_box']}>",
-                "-bordercolor", "#f7f4ed", "-border", "18x18",
+                "-bordercolor", "#faf8f3", "-border", "12x12",
                 "-bordercolor", cfg["frame_color"], "-border", cfg["frame_px"],
-                "(", "+clone", "-background", "black", "-shadow", "65x18+12+22", ")",
+                "(", "+clone", "-background", "black", "-shadow", "60x18+8+18", ")",
                 "+swap", "-background", "none", "-layers", "merge", "+repage",
             ")",
             "-gravity", "north", "-geometry", cfg["offset"],
@@ -221,7 +157,7 @@ def load_meta():
 def main():
     ARTWORKS_DIR.mkdir(parents=True, exist_ok=True)
     MOCKUPS_DIR.mkdir(parents=True, exist_ok=True)
-    templates = ensure_room_templates()
+    room_bases = prepare_room_templates()
     meta_overrides = load_meta()
     gallery = []
     seen_counts = {}
@@ -259,10 +195,10 @@ def main():
         w, h, orientation = get_dimensions(master_img)
         description = ov.get(
             "description",
-            f"Contemporary African fine art work ({title}) by BoldWearArts Collective. {orientation} composition with mat & frame staging for modern spaces; museum prints available via Pictorem."
+            f"Contemporary African fine art work ({title}) by BoldWearArts Collective. {orientation} composition staged in interior spaces and available as museum-grade prints via Pictorem."
         )
 
-        art_rel, room_map = build_assets(master_img, slug, templates)
+        art_rel, room_map = build_assets(master_img, slug, room_bases)
 
         gallery.append({
             "id": slug,
@@ -271,15 +207,15 @@ def main():
             "orientation": orientation,
             "dimensions": f"{w}x{h}px",
             "artwork_img": art_rel,
-            "room_img": room_map["gallery"],
+            "room_img": room_map.get("gallery", art_rel),
             "room_imgs": room_map,
             "pictorem_url": pictorem_url,
             "description": description
         })
-        print(f"[OK] {title} [{orientation}] -> {series}")
+        print(f"[OK] {title} [{orientation}] -> {len(room_map)} rooms")
 
     GALLERY_JSON.write_text(json.dumps(gallery, indent=2))
-    print(f"\nGenerated {len(gallery)} artworks with staged room interiors in {GALLERY_JSON}")
+    print(f"\nGenerated {len(gallery)} artworks in {GALLERY_JSON}")
 
 if __name__ == "__main__":
     main()
