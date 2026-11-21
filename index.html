@@ -4,19 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BoldWearArts Collective — Contemporary African Fine Art</title>
-  <meta name="description" content="Bold contemporary fine art rooted in African influence—surrealism, abstraction, and symbolism with multi-room previews and Pictorem print fulfillment." />
+  <meta name="description" content="Bold contemporary fine art rooted in African influence—surrealism, abstraction, and symbolism with staged interior previews and Pictorem print fulfillment." />
   <meta property="og:title" content="BoldWearArts Collective — Contemporary African Fine Art" />
-  <meta property="og:description" content="Explore 35 contemporary African fine art works with multi-room wall previews and museum-grade prints via Pictorem." />
+  <meta property="og:description" content="Explore 35 contemporary African fine art works with staged room previews and museum-grade prints via Pictorem." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kimara254.github.io/boldwear-arts/" />
   <meta property="og:image" content="https://kimara254.github.io/boldwear-arts/assets/artworks/african-surrealist.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <span class="brand-kicker">CURATED DIGITAL GALLERY</span>
+        <span class="brand-kicker">FINE ART SALON &amp; PRINT EDITION</span>
         <h1>BoldWearArts Collective</h1>
       </div>
       <nav class="header-links">
@@ -31,19 +34,29 @@
   </header>
 
   <section class="hero">
-    <div class="container">
-      <p class="eyebrow">SURREALISM · ABSTRACTION · SYMBOLISM · MODERN SPACES</p>
-      <h2>Bold contemporary art rooted in African influence.</h2>
-      <p class="lead">
-        Visual worlds filled with mystery, emotion, and imagination—created to bring character
-        to modern spaces and stand confidently as a statement.
-      </p>
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">SURREALISM · ABSTRACTION · SYMBOLISM · INTERIOR SPACES</p>
+        <h2>Bold contemporary art rooted in <em>African influence</em>.</h2>
+        <p class="lead">
+          Visual worlds filled with mystery, emotion, and imagination—created to bring character
+          to modern spaces and stand confidently as a statement.
+        </p>
+      </div>
+      <aside class="hero-note">
+        <span class="hero-note-label">SPATIAL STAGING</span>
+        <p>
+          Preview every work mounted with mat and frame across <strong>Gallery</strong>, <strong>Loft</strong>,
+          and <strong>Lounge</strong> rooms—complete with seating, architectural lighting, and botanical accents.
+        </p>
+      </aside>
     </div>
   </section>
 
   <main id="exhibition" class="container section">
     <div class="section-head">
       <div>
+        <span class="eyebrow">CURATED CATALOG</span>
         <h3>Selected Works</h3>
         <p id="piece-count" class="subcount"></p>
       </div>
@@ -63,8 +76,8 @@
 
   <section id="statement" class="statement-section">
     <div class="container statement-box">
-      <span class="eyebrow">CURATOR & COLLECTOR OVERVIEW</span>
-      <h3>Artist Statement</h3>
+      <span class="eyebrow">ARTIST STATEMENT</span>
+      <h3>Rooted in Heritage, Built for Modern Walls</h3>
       <p>
         BoldWearArts Collective creates bold contemporary art inspired by Africa. We explore
         surrealism, abstraction, symbolism and experimental forms to create distinctive visual
@@ -74,8 +87,8 @@
         Our art is rooted in African influence, yet boldly contemporary—created to bring character
         to modern spaces and stand confidently as a statement. Switch between <strong>Artwork</strong>
         and <strong>Gallery</strong>, <strong>Loft</strong>, or <strong>Lounge</strong> room views,
-        save pieces to your <strong>Shortlist</strong>, or select <strong>Order on Pictorem</strong>
-        to configure museum-grade prints.
+        save works to your <strong>Shortlist</strong>, or click <strong>Order on Pictorem</strong>
+        to configure archival canvas, framed, metal, or acrylic editions.
       </p>
     </div>
   </section>
@@ -94,9 +107,9 @@
         <p id="lightbox-desc"></p>
         <div class="room-switcher" id="lightbox-room-bar">
           <button type="button" class="room-chip active" data-mode="art">Artwork</button>
-          <button type="button" class="room-chip" data-mode="gallery">Gallery Wall</button>
-          <button type="button" class="room-chip" data-mode="loft">Modern Loft</button>
-          <button type="button" class="room-chip" data-mode="lounge">Moody Lounge</button>
+          <button type="button" class="room-chip" data-mode="gallery">Gallery Room</button>
+          <button type="button" class="room-chip" data-mode="loft">Sunlit Loft</button>
+          <button type="button" class="room-chip" data-mode="lounge">Salon Lounge</button>
         </div>
         <div class="lightbox-actions">
           <button id="prev-piece" type="button" class="btn secondary">&larr; Prev</button>
@@ -131,7 +144,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>&copy; <span id="year"></span> BoldWearArts Collective</span>
-      <a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener">Curator & Collector Inquiries</a>
+      <a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener">Curator &amp; Collector Inquiries</a>
     </div>
   </footer>
 
