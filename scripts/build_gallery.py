@@ -14,7 +14,6 @@ PICTOREM_GALLERY = "https://www.pictorem.com/gallery/BoldWearArts.Collective"
 
 MAGICK_BIN = shutil.which("magick") or shutil.which("convert")
 
-# Map folder keywords to your Pictorem series and specific known URLs
 SERIES_RULES = [
     (["dancer", "procession", "gathering", "rite", "ceremonial", "masquerade", "festival"], "African Art / Figurative Art / Dance"),
     (["surreal", "coast", "baobab", "river", "landscape", "village", "city", "street", "settlement", "migration"], "African celestial elegance"),
@@ -30,8 +29,9 @@ KNOWN_URLS = {
     "intricate-afro": "https://www.pictorem.com/2815577/african-woman-with-an-intricate-afro-stylized-portrait-1/",
 }
 
+ROMANS = ["", " (II)", " (III)", " (IV)", " (V)"]
+
 def clean_title_from_folder(folder_name: str) -> str:
-    # Strip trailing _AI_6x_YYYYMMDD-HHMMSS
     base = re.sub(r'_AI_\d+x_\d{8}-\d{6}$', '', folder_name)
     return base.replace("_", " ").strip()
 
@@ -93,12 +93,12 @@ def build_assets(src_img: Path, slug: str):
 def main():
     ensure_wall_template()
     gallery = []
+    seen_counts = {}
 
     for folder in sorted(SOURCE_DIR.iterdir()):
         if not folder.is_dir() or folder.name.startswith("."):
             continue
 
-        # Prefer *_AI_6x_Q100.jpg master in each subfolder
         q100_files = sorted(folder.glob("*_AI_6x_Q100.jpg"))
         if q100_files:
             master_img = q100_files[0]
@@ -111,10 +111,18 @@ def main():
                 continue
             master_img = valid_imgs[0]
 
-        title = clean_title_from_folder(folder.name)
-        slug = slugify(title)
-        series = guess_series(slug)
-        pictorem_url = guess_url(slug)
+        base_title = clean_title_from_folder(folder.name)
+        base_slug = slugify(base_title)
+
+        count = seen_counts.get(base_slug, 0)
+        seen_counts[base_slug] = count + 1
+
+        slug = base_slug if count == 0 else f"{base_slug}-{count + 1}"
+        suffix = ROMANS[count] if count < len(ROMANS) else f" ({count + 1})"
+        title = f"{base_title}{suffix}"
+
+        series = guess_series(base_slug)
+        pictorem_url = guess_url(base_slug)
         art_rel, room_rel = build_assets(master_img, slug)
 
         gallery.append({
@@ -126,7 +134,7 @@ def main():
             "pictorem_url": pictorem_url,
             "description": f"Contemporary African fine art work ({title}) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
         })
-        print(f"[OK] {title} -> {series}")
+        print(f"[OK] {title} ({slug}) -> {series}")
 
     GALLERY_JSON.write_text(json.dumps(gallery, indent=2))
     print(f"\nGenerated {len(gallery)} artworks in {GALLERY_JSON}")

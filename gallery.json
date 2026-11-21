@@ -54,13 +54,13 @@
     "description": "Contemporary African fine art work (African River) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
   },
   {
-    "id": "african-river",
-    "title": "African River",
+    "id": "african-river-2",
+    "title": "African River (II)",
     "series": "African celestial elegance",
-    "artwork_img": "assets/artworks/african-river.jpg",
-    "room_img": "assets/mockups/african-river-room.jpg",
+    "artwork_img": "assets/artworks/african-river-2.jpg",
+    "room_img": "assets/mockups/african-river-2-room.jpg",
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (African River) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (African River (II)) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
   },
   {
     "id": "african-surrealist",
@@ -162,13 +162,13 @@
     "description": "Contemporary African fine art work (Ceremonial Procession) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
   },
   {
-    "id": "ceremonial-procession",
-    "title": "Ceremonial Procession",
+    "id": "ceremonial-procession-2",
+    "title": "Ceremonial Procession (II)",
     "series": "African Art / Figurative Art / Dance",
-    "artwork_img": "assets/artworks/ceremonial-procession.jpg",
-    "room_img": "assets/mockups/ceremonial-procession-room.jpg",
+    "artwork_img": "assets/artworks/ceremonial-procession-2.jpg",
+    "room_img": "assets/mockups/ceremonial-procession-2-room.jpg",
     "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Contemporary African fine art work (Ceremonial Procession) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
+    "description": "Contemporary African fine art work (Ceremonial Procession (II)) by BoldWearArts Collective. View in space or order museum-grade prints via Pictorem."
   },
   {
     "id": "coastal-street",
