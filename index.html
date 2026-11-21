@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoldWearArts Collective — Contemporary African Fine Art</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-kicker">CURATED DIGITAL GALLERY</span>
+        <h1>BoldWearArts Collective</h1>
+      </div>
+      <nav class="header-links">
+        <a href="#exhibition">Exhibition</a>
+        <a href="#statement">Artist Statement</a>
+        <a href="https://www.pictorem.com/gallery/BoldWearArts.Collective" target="_blank" rel="noopener">Pictorem Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">SURREALISM · ABSTRACTION · SYMBOLISM · MODERN SPACES</p>
+      <h2>Bold contemporary art rooted in African influence.</h2>
+      <p class="lead">
+        Visual worlds filled with mystery, emotion, and imagination—created to bring character
+        to modern spaces and stand confidently as a statement.
+      </p>
+    </div>
+  </section>
+
+  <main id="exhibition" class="container section">
+    <div class="section-head">
+      <div>
+        <h3>Selected Works</h3>
+        <p id="piece-count" class="subcount"></p>
+      </div>
+      <div id="filter-bar" class="filter-bar"></div>
+    </div>
+    <div id="gallery-grid" class="gallery-grid"></div>
+  </main>
+
+  <section id="statement" class="statement-section">
+    <div class="container statement-box">
+      <span class="eyebrow">CURATOR & COLLECTOR OVERVIEW</span>
+      <h3>Artist Statement</h3>
+      <p>
+        BoldWearArts Collective creates bold contemporary art inspired by Africa. We explore
+        surrealism, abstraction, symbolism and experimental forms to create distinctive visual
+        worlds filled with mystery, emotion and imagination.
+      </p>
+      <p>
+        Our art is rooted in African influence, yet boldly contemporary—created to bring character
+        to modern spaces and stand confidently as a statement. Toggle <strong>View in Room</strong>
+        on any work to preview how it sits on a wall, or select <strong>Order on Pictorem</strong>
+        to configure museum-grade prints.
+      </p>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+    <div class="lightbox-card">
+      <button id="close-lightbox" class="close-btn" aria-label="Close preview">&times;</button>
+      <img id="lightbox-img" src="" alt="" />
+      <div class="lightbox-meta">
+        <span id="lightbox-series" class="art-series"></span>
+        <h4 id="lightbox-title"></h4>
+        <p id="lightbox-desc"></p>
+        <div class="lightbox-actions">
+          <button id="lightbox-toggle-room" class="btn secondary">View in Room</button>
+          <a id="lightbox-pictorem" href="#" target="_blank" rel="noopener" class="btn primary">Order on Pictorem</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year"></span> BoldWearArts Collective</span>
+      <a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener">Curator & Collector Inquiries</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
