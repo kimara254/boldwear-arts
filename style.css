@@ -379,3 +379,23 @@ a{transition:color .2s ease,border-color .2s ease,background .2s ease}
 .room-photo-art{position:absolute;left:50%;top:15%;width:25%;height:45%;transform:translateX(-50%);padding:8px;background:#171512;border:2px solid #c6a45a;box-shadow:0 7px 20px #0008,inset 0 0 0 4px #f4efe5;z-index:5}
 .room-photo-art img{display:block;width:100%;height:100%;object-fit:contain;background:#f5f0e7;border:3px solid #eee8dd}
 @media(max-width:600px){.room-photo-stage{aspect-ratio:4/3}.room-photo-art{top:12%;width:31%;height:43%;padding:5px}}
+
+/* Curated room placement: clean templates + a single controlled artwork mount. */
+.room-photo-stage{position:relative;aspect-ratio:3/2;overflow:hidden;background:#e8e1d5}
+.room-photo-stage .room-photo-background{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
+.room-photo-stage .room-view-label{z-index:9}
+.room-artwork-frame{position:absolute;z-index:5;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#181613;padding:clamp(5px,.8vw,12px);border:1px solid rgba(255,255,255,.35);box-shadow:0 8px 22px rgba(0,0,0,.28),0 2px 5px rgba(0,0,0,.22)}
+.room-artwork-frame img{display:block;width:100%;height:100%;object-fit:contain;background:#f4efe5;border:clamp(3px,.45vw,6px) solid #f4efe5;box-sizing:border-box}
+.room-gallery .room-artwork-frame{left:50%;top:20%;width:27%;height:44%;transform:translateX(-50%)}
+.room-living .room-artwork-frame{left:42%;top:10%;width:25%;height:31%;transform:translateX(-50%)}
+.room-loft .room-artwork-frame{left:49%;top:9%;width:23%;height:30%;transform:translateX(-50%)}
+.room-lounge .room-artwork-frame{left:47%;top:19%;width:17%;height:34%;transform:translateX(-50%)}
+.room-studio .room-artwork-frame{left:50%;top:3%;width:27%;height:24%;transform:translateX(-50%)}
+@media(max-width:600px){
+ .room-photo-stage{aspect-ratio:4/3}
+ .room-gallery .room-artwork-frame{top:19%;width:34%;height:43%}
+ .room-living .room-artwork-frame{top:10%;width:31%;height:29%}
+ .room-loft .room-artwork-frame{top:9%;width:29%;height:28%}
+ .room-lounge .room-artwork-frame{top:19%;width:22%;height:33%}
+ .room-studio .room-artwork-frame{top:3%;width:34%;height:22%}
+}
