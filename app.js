@@ -166,7 +166,7 @@ function updateModal() {
     living:  { image:"templates/room_living.jpg", label:"Living Room", left:"48%", top:"8%", width:"26%", height:"29%" },
     loft:    { image:"templates/wall_loft.jpg", label:"Reading Room", left:"50%", top:"12%", width:"25%", height:"34%" },
     lounge:  { image:"templates/room_lounge.jpg", label:"Salon Lounge", left:"43%", top:"18%", width:"19%", height:"34%" },
-    studio:  { image:"templates/room_studio.jpg", label:"Bedroom", left:"50%", top:"7%", width:"29%", height:"24%" }
+    studio:  { image:"templates/room_studio.jpg", label:"Bedroom", left:"50%", top:"2%", width:"22%", height:"16%" }
   };
   if (isRoomView) {
     const room = rooms[modalMode] || rooms.gallery;
