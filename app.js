@@ -175,7 +175,7 @@ function updateModal() {
   if (!item) return;
 
   const lightboxImage = document.getElementById("lightbox-img");
-  lightboxImage.src = getModeImage(item, modalMode);
+  lightboxImage.src = getModeImage(item, "art");
   lightboxImage.alt = item.title;
   const roomStage = document.getElementById("room-stage");
   const isRoomView = modalMode !== "art";
