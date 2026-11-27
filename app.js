@@ -188,6 +188,13 @@ function updateModal() {
   });
 }
 
+document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
+  chip.addEventListener("click", () => {
+    modalMode = chip.dataset.mode;
+    updateModal();
+  });
+});
+
 
 $("lightbox-save").addEventListener("click", () => {
   if (modalIndex >= 0) toggleShortlist(artworks[modalIndex].id);
