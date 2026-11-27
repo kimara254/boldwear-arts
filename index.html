@@ -1,153 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BoldWearArts Collective — Contemporary African Fine Art</title>
-  <meta name="description" content="Bold contemporary fine art rooted in African influence—surrealism, abstraction, and symbolism with staged interior previews and Pictorem print fulfillment." />
-  <meta property="og:title" content="BoldWearArts Collective — Contemporary African Fine Art" />
-  <meta property="og:description" content="Explore 35 contemporary African fine art works with staged room previews and museum-grade prints via Pictorem." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kimara254.github.io/boldwear-arts/" />
-  <meta property="og:image" content="https://kimara254.github.io/boldwear-arts/assets/artworks/african-surrealist.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#171713">
+<title>BoldWearArts — Contemporary African Art by Simon Kaguru Kimara</title>
+<meta name="description" content="Discover contemporary African art by Simon Kaguru Kimara. Original works exploring cultural memory, ancestral knowledge, landscapes and identity. View artworks in curated interiors and order fine-art prints.">
+<link rel="canonical" href="https://kimara254.github.io/boldwear-arts/">
+<meta property="og:type" content="website"><meta property="og:title" content="BoldWearArts — Contemporary African Art">
+<meta property="og:description" content="Art shaped by memory. Made for now. Explore the contemporary African art practice of Simon Kaguru Kimara.">
+<meta property="og:url" content="https://kimara254.github.io/boldwear-arts/">
+<meta property="og:image" content="https://kimara254.github.io/boldwear-arts/assets/artworks/ancient-baobab.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <span class="brand-kicker">FINE ART SALON &amp; PRINT EDITION</span>
-        <h1>BoldWearArts Collective</h1>
-      </div>
-      <nav class="header-links">
-        <a href="#exhibition">Exhibition</a>
-        <a href="#statement">Artist Statement</a>
-        <button id="open-shortlist-btn" class="nav-pill" type="button">
-          Shortlist (<span id="shortlist-count">0</span>)
-        </button>
-        <a href="https://www.pictorem.com/gallery/BoldWearArts.Collective" target="_blank" rel="noopener">Pictorem Gallery</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">SURREALISM · ABSTRACTION · SYMBOLISM · INTERIOR SPACES</p>
-        <h2>Bold contemporary art rooted in <em>African influence</em>.</h2>
-        <p class="lead">
-          Visual worlds filled with mystery, emotion, and imagination—created to bring character
-          to modern spaces and stand confidently as a statement.
-        </p>
-      </div>
-      <aside class="hero-note">
-        <span class="hero-note-label">SPATIAL STAGING</span>
-        <p>
-          Preview every work mounted with mat and frame across <strong>Gallery</strong>, <strong>Loft</strong>,
-          and <strong>Lounge</strong> rooms—complete with seating, architectural lighting, and botanical accents.
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <main id="exhibition" class="container section">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">CURATED CATALOG</span>
-        <h3>Selected Works</h3>
-        <p id="piece-count" class="subcount"></p>
-      </div>
-      <div class="controls-stack">
-        <input
-          id="search-input"
-          class="search-input"
-          type="search"
-          placeholder="Search title, series, or mood..."
-          aria-label="Search artworks"
-        />
-        <div id="filter-bar" class="filter-bar"></div>
-      </div>
-    </div>
-    <div id="gallery-grid" class="gallery-grid"></div>
-  </main>
-
-  <section id="statement" class="statement-section">
-    <div class="container statement-box">
-      <span class="eyebrow">ARTIST STATEMENT</span>
-      <h3>Rooted in Heritage, Built for Modern Walls</h3>
-      <p>
-        BoldWearArts Collective creates bold contemporary art inspired by Africa. We explore
-        surrealism, abstraction, symbolism and experimental forms to create distinctive visual
-        worlds filled with mystery, emotion and imagination.
-      </p>
-      <p>
-        Our art is rooted in African influence, yet boldly contemporary—created to bring character
-        to modern spaces and stand confidently as a statement. Switch between <strong>Artwork</strong>
-        and <strong>Gallery</strong>, <strong>Loft</strong>, or <strong>Lounge</strong> room views,
-        save works to your <strong>Shortlist</strong>, or click <strong>Order on Pictorem</strong>
-        to configure archival canvas, framed, metal, or acrylic editions.
-      </p>
-    </div>
-  </section>
-
-  <!-- Lightbox Modal -->
-  <div id="lightbox" class="lightbox hidden" aria-hidden="true">
-    <div class="lightbox-card">
-      <button id="close-lightbox" class="close-btn" aria-label="Close preview">&times;</button>
-      <img id="lightbox-img" src="" alt="" />
-      <div class="lightbox-meta">
-        <div class="meta-top-row">
-          <span id="lightbox-series" class="art-series"></span>
-          <span id="lightbox-spec" class="spec-badge"></span>
-        </div>
-        <h4 id="lightbox-title"></h4>
-        <p id="lightbox-desc"></p>
-        <div class="room-switcher" id="lightbox-room-bar">
-          <button type="button" class="room-chip active" data-mode="art">Artwork</button>
-          <button type="button" class="room-chip" data-mode="gallery">Gallery Room</button>
-          <button type="button" class="room-chip" data-mode="loft">Sunlit Loft</button>
-          <button type="button" class="room-chip" data-mode="lounge">Salon Lounge</button>
-        </div>
-        <div class="lightbox-actions">
-          <button id="prev-piece" type="button" class="btn secondary">&larr; Prev</button>
-          <button id="next-piece" type="button" class="btn secondary">Next &rarr;</button>
-          <button id="lightbox-save" type="button" class="btn secondary">Save to Shortlist</button>
-          <a id="lightbox-pictorem" href="#" target="_blank" rel="noopener" class="btn primary">Order on Pictorem</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Collector Shortlist Drawer -->
-  <div id="shortlist-drawer" class="drawer-backdrop hidden" aria-hidden="true">
-    <aside class="drawer-panel">
-      <div class="drawer-head">
-        <h4>Collector Shortlist</h4>
-        <button id="close-drawer" class="close-btn-inline" type="button" aria-label="Close shortlist">&times;</button>
-      </div>
-      <div id="shortlist-items" class="shortlist-items"></div>
-      <div class="drawer-footer">
-        <button id="copy-shortlist-btn" type="button" class="btn secondary">Copy Selection Summary</button>
-        <a
-          href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ"
-          target="_blank"
-          rel="noopener"
-          class="btn primary"
-        >Inquire About Selection</a>
-      </div>
-    </aside>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>&copy; <span id="year"></span> BoldWearArts Collective</span>
-      <a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener">Curator &amp; Collector Inquiries</a>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="announcement">INDEPENDENT ART PRACTICE <span>·</span> ROOTED IN AFRICA <span>·</span> IN CONVERSATION WITH THE WORLD</div>
+<header class="site-header"><div class="container header-inner">
+<a class="brand-lockup" href="#" aria-label="BoldWearArts home"><span class="brand-mark">B<span>W</span>A</span><span class="brand-name">BoldWearArts<small>CONTEMPORARY AFRICAN ART</small></span></a>
+<nav class="header-links" aria-label="Main navigation"><a href="#exhibition">Artworks</a><a href="#statement">The Practice</a><a href="#spaces">In Your Space</a><button id="open-shortlist-btn" class="nav-pill" type="button">Shortlist <span id="shortlist-count">0</span></button><a class="header-shop" href="https://www.pictorem.com/gallery/BoldWearArts.Collective" target="_blank" rel="noopener">Shop prints ↗</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">SIMON KAGURU KIMARA · ARTIST</p><h1>Art shaped by <em>memory.</em><br>Made for now.</h1>
+<p class="lead">A contemporary African art practice exploring cultural memory, ancestral knowledge, lived histories and the landscapes that shape who we are.</p>
+<div class="hero-actions"><a class="btn primary" href="#exhibition">Explore the collection</a><a class="underlink" href="#statement">Discover the practice ↓</a></div>
+<div class="hero-footnote">DIGITAL ART · PAINTERLY MIXED MEDIA · SYMBOLISM</div></div>
+<div class="hero-image"><img src="assets/artworks/ancient-baobab.jpg" alt="Ancient Baobab — contemporary African artwork by BoldWearArts" fetchpriority="high"><div class="image-caption"><span>FEATURED WORK</span><strong>Ancient Baobab</strong></div><div class="image-index">BWA / 001</div></div></div></section>
+<div class="ticker"><span>HERITAGE</span> — <span>MEMORY</span> — <span>IDENTITY</span> — <span>TRANSFORMATION</span> — <span>CONTINUITY</span></div>
+<section id="exhibition" class="container section exhibition"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Selected works</h2><p id="piece-count" class="subcount"></p></div><div class="controls-stack"><input id="search-input" class="search-input" type="search" placeholder="Search title, series or mood…" aria-label="Search artworks"><div id="filter-bar" class="filter-bar"></div></div></div><div id="gallery-grid" class="gallery-grid"></div></section>
+<section id="statement" class="statement-section"><div class="container statement-grid"><div><p class="eyebrow">ARTIST STATEMENT</p><h2>Our stories are not static.<br><em>They are still becoming.</em></h2></div><div class="statement-copy"><p>BoldWearArts is the independent art practice of <strong>Simon Kaguru Kimara</strong>, working under the name BoldWearArts. The practice explores the meeting point of cultural memory, ancestral knowledge, landscapes, historical experience and contemporary African identity.</p><p>Through digital art and AI-assisted, painterly mixed-media processes, each work uses symbolism, texture, form and metaphor to consider the tensions between tradition and transformation. The intention is not to freeze African culture in the past, but to engage it as a living, evolving presence.</p><p>Rooted in East African experience and open to wider perspectives, the work invites reflection and connection across borders.</p><div class="artist-signature">SIMON KAGURU KIMARA <span>Artist · BoldWearArts</span></div></div></div></section>
+<section id="spaces" class="container spaces-section"><div class="spaces-copy"><p class="eyebrow">ART BEYOND THE SCREEN</p><h2>See the work<br><em>in its own space.</em></h2><p>Explore each artwork as an image and as part of a considered interior. Switch between gallery, loft and lounge settings to imagine scale, atmosphere and presence in your own space.</p><a class="underlink" href="#exhibition">Choose a work to preview ↑</a></div><div class="space-preview"><div class="space-art"><img src="assets/artworks/african-surrealist.jpg" alt="Contemporary African surrealist artwork"><span>ART IN CONTEXT</span></div><div class="space-note">A work can change the feeling of a room.<br><small>Explore the room views on each artwork.</small></div></div></section>
+<section class="print-band"><div class="container print-band-inner"><div><p class="eyebrow">FINE-ART PRINT EDITIONS</p><h2>Bring a story<br>into your space.</h2><p>Explore available print formats and configure your chosen work through our gallery partner, Pictorem.</p></div><a class="btn light" href="https://www.pictorem.com/gallery/BoldWearArts.Collective" target="_blank" rel="noopener">Visit the Pictorem gallery ↗</a></div></section>
+</main>
+<div id="lightbox" class="lightbox hidden" aria-hidden="true"><div class="lightbox-card"><button id="close-lightbox" class="close-btn" aria-label="Close preview">&times;</button><img id="lightbox-img" src="" alt=""><div class="lightbox-meta"><div class="meta-top-row"><span id="lightbox-series" class="art-series"></span><span id="lightbox-spec" class="spec-badge"></span></div><h4 id="lightbox-title"></h4><p id="lightbox-desc"></p><div class="room-switcher" id="lightbox-room-bar"><button type="button" class="room-chip active" data-mode="art">Artwork</button><button type="button" class="room-chip" data-mode="gallery">Gallery Room</button><button type="button" class="room-chip" data-mode="loft">Sunlit Loft</button><button type="button" class="room-chip" data-mode="lounge">Salon Lounge</button></div><div class="lightbox-actions"><button id="prev-piece" type="button" class="btn secondary">← Prev</button><button id="next-piece" type="button" class="btn secondary">Next →</button><button id="lightbox-save" type="button" class="btn secondary">Save to Shortlist</button><a id="lightbox-pictorem" href="#" target="_blank" rel="noopener" class="btn primary">Order on Pictorem ↗</a></div></div></div></div>
+<div id="shortlist-drawer" class="drawer-backdrop hidden" aria-hidden="true"><aside class="drawer-panel"><div class="drawer-head"><h4>Collector Shortlist</h4><button id="close-drawer" class="close-btn-inline" type="button" aria-label="Close shortlist">×</button></div><div id="shortlist-items" class="shortlist-items"></div><div class="drawer-footer"><button id="copy-shortlist-btn" type="button" class="btn secondary">Copy selection summary</button><a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener" class="btn primary">Inquire about selection ↗</a></div></aside></div>
+<footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><span class="brand-mark">B<span>W</span>A</span><div><strong>BoldWearArts</strong><small>CONTEMPORARY AFRICAN ART</small></div></div><p>Independent art practice by Simon Kaguru Kimara.<br>Rooted in Africa. In conversation with the world.</p><div class="footer-links"><a href="#exhibition">Artworks</a><a href="#statement">Artist statement</a><a href="https://www.pictorem.com/gallery/BoldWearArts.Collective" target="_blank" rel="noopener">Pictorem gallery ↗</a><a href="https://www.pictorem.com/contactartist.html?UserID=AM3PEU5INJ" target="_blank" rel="noopener">Enquiries ↗</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> BoldWearArts. All rights reserved.</span><span>SIMON KAGURU KIMARA · KENYA</span></div></footer>
+<script src="app.js"></script>
+</body></html>
