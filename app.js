@@ -152,7 +152,6 @@ function openModal(index, mode = "art") {
 function updateModal() {
   const item = artworks[modalIndex];
   if (!item) return;
-
   const artworkImage = $("lightbox-img");
   const roomStage = $("room-stage");
   const isRoomView = modalMode !== "art";
@@ -160,38 +159,21 @@ function updateModal() {
   artworkImage.alt = item.title;
   artworkImage.hidden = isRoomView;
   roomStage.hidden = !isRoomView;
-
   if (isRoomView) {
-    const stem = item.artwork_img.split("/").pop().replace(/\\.[^.]+$/, "");
-    const roomImages = {
-      gallery: item.room_imgs && item.room_imgs.gallery,
-      living: `assets/mockups/${stem}-room.jpg`,
-      loft: item.room_imgs && item.room_imgs.loft,
-      lounge: item.room_imgs && item.room_imgs.lounge
+    const rooms = {
+      gallery: { image: "templates/gallery_wall.jpg", label: "Gallery Wall", position: "gallery" },
+      living: { image: "templates/room_living.jpg", label: "Living Room", position: "living" },
+      loft: { image: "templates/_prepared_living.jpg", label: "Reading Room", position: "loft" },
+      lounge: { image: "templates/room_lounge.jpg", label: "Salon Lounge", position: "lounge" },
+      studio: { image: "templates/room_studio.jpg", label: "Bedroom", position: "studio" }
     };
-    const roomNames = {
-      gallery: "Gallery Room",
-      living: "Living Room",
-      loft: "Sunlit Loft",
-      lounge: "Salon Lounge",
-      studio: "Studio"
-    };
-
-    if (modalMode === "studio") {
-      roomStage.className = "room-stage room-photo-stage";
-      roomStage.innerHTML = `
-        <img class="room-photo-background" src="templates/room_studio.jpg" alt="Photographic studio interior">
-        <div class="room-photo-art"><img src="${item.artwork_img}" alt="${item.title} displayed on the studio wall"></div>
-        <span class="room-view-label">${roomNames.studio}</span>`;
-    } else {
-      const source = roomImages[modalMode];
-      roomStage.className = "room-stage room-photo-stage";
-      roomStage.innerHTML = `
-        <img class="room-photo-background" src="${source || item.artwork_img}" alt="${item.title} in ${roomNames[modalMode] || "an interior"}">
-        <span class="room-view-label">${roomNames[modalMode] || "Interior view"}</span>`;
-    }
+    const room = rooms[modalMode] || rooms.gallery;
+    roomStage.className = `room-stage room-photo-stage room-${room.position}`;
+    roomStage.innerHTML = `
+      <img class="room-photo-background" src="${room.image}" alt="${room.label} interior">
+      <div class="room-artwork-frame"><img src="${item.artwork_img}" alt="${item.title} mounted on the wall"></div>
+      <span class="room-view-label">${room.label}</span>`;
   }
-
   $("lightbox-series").textContent = item.series;
   $("lightbox-spec").textContent = `${item.orientation || ""} ${item.dimensions ? "· " + item.dimensions : ""}`.trim();
   $("lightbox-title").textContent = item.title;
@@ -206,12 +188,6 @@ function updateModal() {
   });
 }
 
-document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
-  chip.addEventListener("click", () => {
-    modalMode = chip.dataset.mode;
-    updateModal();
-  });
-});
 
 $("lightbox-save").addEventListener("click", () => {
   if (modalIndex >= 0) toggleShortlist(artworks[modalIndex].id);
