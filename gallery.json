@@ -32,22 +32,6 @@
     "description": "Contemporary African fine art work (African Coast Dawn) by BoldWearArts Collective. Landscape composition staged in interior spaces and available as museum-grade prints via Pictorem."
   },
   {
-    "id": "african-coast-dawn-retry",
-    "title": "African Coast Dawn (Study)",
-    "series": "African Celestial Elegance",
-    "orientation": "Landscape",
-    "dimensions": "7488x4992px",
-    "artwork_img": "assets/artworks/african-coast-dawn-retry.jpg",
-    "room_img": "assets/mockups/african-coast-dawn-retry-room-gallery.jpg",
-    "room_imgs": {
-      "gallery": "assets/mockups/african-coast-dawn-retry-room-gallery.jpg",
-      "loft": "assets/mockups/african-coast-dawn-retry-room-loft.jpg",
-      "lounge": "assets/mockups/african-coast-dawn-retry-room-lounge.jpg"
-    },
-    "pictorem_url": "https://www.pictorem.com/gallery/BoldWearArts.Collective",
-    "description": "Luminous coastal horizon study rooted in African surrealism and atmospheric calm. Available as museum-grade print via Pictorem."
-  },
-  {
     "id": "african-festival",
     "title": "African Festival",
     "series": "African Art / Figurative Art / Dance",
