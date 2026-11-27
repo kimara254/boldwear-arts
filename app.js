@@ -32,6 +32,11 @@ fetch("gallery.json")
     updateShortlistUI();
     renderFilters();
     renderGrid();
+  })
+  .catch((error) => {
+    console.error("BoldWearArts catalogue could not be loaded:", error);
+    countEl.textContent = "The collection could not be loaded. Please refresh the page.";
+    gridEl.innerHTML = '<p class="subcount">The artwork catalogue is temporarily unavailable. Please try again shortly.</p>';
   });
 
 searchEl.addEventListener("input", (e) => {
@@ -115,6 +120,11 @@ function renderGrid() {
   const filtered = getFilteredArtworks();
   countEl.textContent = `Showing ${filtered.length} of ${artworks.length} works`;
   gridEl.innerHTML = "";
+
+  if (!filtered.length) {
+    gridEl.innerHTML = '<p class="subcount">No artworks match this search. Try another title or collection.</p>';
+    return;
+  }
 
   filtered.forEach((item) => {
     const mode = viewModeById[item.id] || "art";
