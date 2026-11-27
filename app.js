@@ -162,29 +162,34 @@ function updateModal() {
   roomStage.hidden = !isRoomView;
 
   if (isRoomView) {
+    const stem = item.artwork_img.split("/").pop().replace(/\\.[^.]+$/, "");
+    const roomImages = {
+      gallery: item.room_imgs && item.room_imgs.gallery,
+      living: `assets/mockups/${stem}-room.jpg`,
+      loft: item.room_imgs && item.room_imgs.loft,
+      lounge: item.room_imgs && item.room_imgs.lounge
+    };
     const roomNames = {
       gallery: "Gallery Room",
       living: "Living Room",
-      bedroom: "Bedroom",
-      office: "Home Office",
-      dining: "Dining & Entrance"
+      loft: "Sunlit Loft",
+      lounge: "Salon Lounge",
+      studio: "Studio"
     };
-    const furniture = {
-      gallery: '<div class="room-console"></div><div class="room-plant plant-left"></div><div class="room-plinth"></div>',
-      living: '<div class="room-sofa"><i></i><i></i><i></i></div><div class="room-coffee-table"></div><div class="room-plant plant-right"></div>',
-      bedroom: '<div class="room-headboard"></div><div class="room-bed"><i></i><i></i></div><div class="room-nightstand"></div>',
-      office: '<div class="room-desk"></div><div class="room-office-chair"></div><div class="room-bookcase"></div>',
-      dining: '<div class="room-dining-table"></div><div class="room-dining-chairs"></div><div class="room-vase"></div>'
-    };
-    roomStage.className = "room-stage room-" + modalMode;
-    roomStage.innerHTML = `
-      <div class="room-wall">
-        <div class="room-ceiling-light"></div>
-        <div class="room-art-frame"><img src="${item.artwork_img}" alt="${item.title} mounted on the wall"></div>
-        ${furniture[modalMode] || ""}
-      </div>
-      <div class="room-floor"></div>
-      <span class="room-view-label">${roomNames[modalMode] || "Interior view"}</span>`;
+
+    if (modalMode === "studio") {
+      roomStage.className = "room-stage room-photo-stage";
+      roomStage.innerHTML = `
+        <img class="room-photo-background" src="templates/room_studio.jpg" alt="Photographic studio interior">
+        <div class="room-photo-art"><img src="${item.artwork_img}" alt="${item.title} displayed on the studio wall"></div>
+        <span class="room-view-label">${roomNames.studio}</span>`;
+    } else {
+      const source = roomImages[modalMode];
+      roomStage.className = "room-stage room-photo-stage";
+      roomStage.innerHTML = `
+        <img class="room-photo-background" src="${source || item.artwork_img}" alt="${item.title} in ${roomNames[modalMode] || "an interior"}">
+        <span class="room-view-label">${roomNames[modalMode] || "Interior view"}</span>`;
+    }
   }
 
   $("lightbox-series").textContent = item.series;
