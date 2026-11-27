@@ -170,8 +170,24 @@ function updateModal() {
   const item = artworks[modalIndex];
   if (!item) return;
 
-  document.getElementById("lightbox-img").src = getModeImage(item, modalMode);
-  document.getElementById("lightbox-img").alt = item.title;
+  const lightboxImage = document.getElementById("lightbox-img");
+  lightboxImage.src = getModeImage(item, modalMode);
+  lightboxImage.alt = item.title;
+  const roomStage = document.getElementById("room-stage");
+  const isRoomView = modalMode !== "art";
+  lightboxImage.hidden = isRoomView;
+  roomStage.hidden = !isRoomView;
+  if (isRoomView) {
+    roomStage.className = `room-stage room-${modalMode}`;
+    const furniture = {
+      gallery: '<div class="room-console"></div><div class="room-plant plant-left"></div><div class="room-plinth"></div>',
+      living: '<div class="room-sofa"><i></i><i></i><i></i></div><div class="room-coffee-table"></div><div class="room-plant plant-right"></div>',
+      bedroom: '<div class="room-headboard"></div><div class="room-bed"><i></i><i></i></div><div class="room-nightstand"></div>',
+      office: '<div class="room-desk"></div><div class="room-office-chair"></div><div class="room-bookcase"></div>',
+      dining: '<div class="room-dining-table"></div><div class="room-dining-chairs"></div><div class="room-vase"></div>'
+    };
+    roomStage.innerHTML = `<div class="room-wall"><div class="room-ceiling-light"></div><div class="room-art-frame"><img src="${item.artwork_img}" alt="${item.title} displayed on the wall"></div>${furniture[modalMode] || ""}</div><div class="room-floor"></div><span class="room-view-label">${({gallery:"Gallery Room",living:"Living Room",bedroom:"Bedroom",office:"Home Office",dining:"Dining & Entrance"})[modalMode]}</span>`;
+  }
   document.getElementById("lightbox-series").textContent = item.series;
   document.getElementById("lightbox-spec").textContent = `${item.orientation || ""} ${item.dimensions ? "· " + item.dimensions : ""}`.trim();
   document.getElementById("lightbox-title").textContent = item.title;
@@ -183,7 +199,14 @@ function updateModal() {
   saveBtn.textContent = isSaved ? "Saved in Shortlist" : "Save to Shortlist";
   saveBtn.classList.toggle("saved", isSaved);
 
-  document.getElementById("lightbox-save").onclick = () => {
+  document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
+  chip.onclick = () => {
+    modalMode = chip.dataset.mode;
+    updateModal();
+  };
+});
+
+document.getElementById("lightbox-save").onclick = () => {
   if (modalIndex >= 0) toggleShortlist(artworks[modalIndex].id);
 };
 
