@@ -158,24 +158,39 @@ function updateModal() {
   artworkImage.src = item.artwork_img;
   artworkImage.alt = item.title;
   artworkImage.hidden = isRoomView;
+  artworkImage.style.display = isRoomView ? "none" : "block";
   roomStage.hidden = !isRoomView;
+  roomStage.style.display = isRoomView ? "block" : "none";
+  const rooms = {
+    gallery: { image:"templates/gallery_wall.jpg", label:"Gallery Wall", left:"50%", top:"15%", width:"27%", height:"43%" },
+    living:  { image:"templates/room_living.jpg", label:"Living Room", left:"48%", top:"8%", width:"26%", height:"29%" },
+    loft:    { image:"templates/wall_loft.jpg", label:"Reading Room", left:"50%", top:"12%", width:"25%", height:"34%" },
+    lounge:  { image:"templates/room_lounge.jpg", label:"Salon Lounge", left:"43%", top:"18%", width:"19%", height:"34%" },
+    studio:  { image:"templates/room_studio.jpg", label:"Bedroom", left:"50%", top:"7%", width:"29%", height:"24%" }
+  };
   if (isRoomView) {
-    const rooms = {
-      gallery: { image: "templates/gallery_wall.jpg", label: "Gallery Wall", position: "gallery" },
-      living: { image: "templates/room_living.jpg", label: "Living Room", position: "living" },
-      loft: { image: "templates/_prepared_living.jpg", label: "Reading Room", position: "loft" },
-      lounge: { image: "templates/room_lounge.jpg", label: "Salon Lounge", position: "lounge" },
-      studio: { image: "templates/room_studio.jpg", label: "Bedroom", position: "studio" }
-    };
     const room = rooms[modalMode] || rooms.gallery;
-    roomStage.className = `room-stage room-photo-stage room-${room.position}`;
-    roomStage.innerHTML = `
-      <img class="room-photo-background" src="${room.image}" alt="${room.label} interior">
-      <div class="room-artwork-frame"><img src="${item.artwork_img}" alt="${item.title} mounted on the wall"></div>
-      <span class="room-view-label">${room.label}</span>`;
+    roomStage.className = "room-stage room-photo-stage";
+    roomStage.innerHTML = "";
+    const background = document.createElement("img");
+    background.className = "room-photo-background";
+    background.src = room.image;
+    background.alt = room.label + " interior";
+    const frame = document.createElement("div");
+    frame.className = "room-artwork-frame";
+    Object.assign(frame.style,{position:"absolute",zIndex:"5",left:room.left,top:room.top,width:room.width,height:room.height,transform:"translateX(-50%)",boxSizing:"border-box",display:"flex",alignItems:"center",justifyContent:"center",padding:"7px",background:"#171512",border:"2px solid #c6a45a",boxShadow:"0 8px 22px rgba(0,0,0,.42),0 2px 5px rgba(0,0,0,.3)"});
+    const mountedArt = document.createElement("img");
+    mountedArt.src = item.artwork_img;
+    mountedArt.alt = item.title + " mounted on the " + room.label + " wall";
+    Object.assign(mountedArt.style,{display:"block",width:"100%",height:"100%",objectFit:"contain",boxSizing:"border-box",border:"4px solid #f4efe5",background:"#f4efe5"});
+    frame.appendChild(mountedArt);
+    const label = document.createElement("span");
+    label.className = "room-view-label";
+    label.textContent = room.label;
+    roomStage.append(background,frame,label);
   }
   $("lightbox-series").textContent = item.series;
-  $("lightbox-spec").textContent = `${item.orientation || ""} ${item.dimensions ? "· " + item.dimensions : ""}`.trim();
+  $("lightbox-spec").textContent = (item.orientation || "") + (item.dimensions ? " · " + item.dimensions : "");
   $("lightbox-title").textContent = item.title;
   $("lightbox-desc").textContent = item.description || "";
   $("lightbox-pictorem").href = item.pictorem_url || "https://www.pictorem.com/gallery/BoldWearArts.Collective";
@@ -183,9 +198,6 @@ function updateModal() {
   const saved = shortlistIds.includes(item.id);
   saveButton.textContent = saved ? "Saved in Shortlist" : "Save to Shortlist";
   saveButton.classList.toggle("saved", saved);
-  document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
-    chip.classList.toggle("active", chip.dataset.mode === modalMode);
-  });
 }
 
 document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
