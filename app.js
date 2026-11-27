@@ -124,7 +124,11 @@ function renderGrid() {
 
   filtered.forEach((item) => {
     const mode = viewModeById[item.id] || "art";
-    const isSaved = shortlistIds.includes(item.id);
+    document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
+    chip.classList.toggle("active", chip.dataset.mode === modalMode);
+  });
+
+  const isSaved = shortlistIds.includes(item.id);
     const card = document.createElement("article");
     card.className = "art-card";
 
