@@ -339,3 +339,35 @@ a{transition:color .2s ease,border-color .2s ease,background .2s ease}
 .drawer-panel{background:#201f1a}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:2.5rem}.hero-image{height:420px}.statement-grid,.spaces-section{grid-template-columns:1fr;gap:2rem}.spaces-section{padding:5rem 0}.space-preview{height:340px}.footer-main{grid-template-columns:1fr 1fr}.footer-links{grid-column:1/-1}}
 @media(max-width:600px){.announcement{font-size:.49rem;letter-spacing:.1em;gap:6px}.header-inner{align-items:flex-start}.brand-mark{width:38px;height:38px;font-size:1.2rem}.brand-name{font-size:1rem}.header-links{gap:.65rem 1rem;justify-content:flex-start}.header-links a{font-size:.59rem}.header-links .header-shop{padding:.45rem .55rem}.nav-pill{font-size:.58rem;padding:.4rem .55rem}.hero{padding:3.5rem 0}.hero h1{font-size:3.6rem}.lead{font-size:1.05rem}.hero-image{height:350px}.hero-footnote{margin-top:2.5rem}.ticker{font-size:.63rem;letter-spacing:.1em}.ticker span{padding:0 .15rem}.section{padding:4.5rem 0}.section-head{align-items:flex-start}.controls-stack{width:100%}.search-input{width:100%;min-width:0}.filter-bar{justify-content:flex-start}.gallery-grid{grid-template-columns:1fr}.statement-section{padding:4.5rem 0}.statement-grid h2{font-size:3rem}.statement-copy p{font-size:1rem}.spaces-copy h2{font-size:3.2rem}.space-preview{height:290px}.print-band{padding:3.5rem 0}.print-band-inner{align-items:flex-start;flex-direction:column;gap:1.5rem}.footer-main{grid-template-columns:1fr;gap:1.4rem}.footer-links{grid-column:auto}.footer-bottom{display:block;line-height:2}.footer-bottom span{display:block}}
+\n
+/* Five fixed-position interior mockup scenes: artwork is mounted on the wall, never on furniture. */
+.room-stage{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#d7c8ad;isolation:isolate}
+.room-stage[hidden]{display:none}
+.room-wall{position:absolute;inset:0 0 22%;background:linear-gradient(110deg,#e9dfcd 0%,#d8c7ad 55%,#eee5d6 100%);box-shadow:inset 0 -10px 22px #6b574322}
+.room-floor{position:absolute;left:0;right:0;bottom:0;height:22%;background:repeating-linear-gradient(90deg,#98724d 0 2px,#b48a5e 2px 95px);border-top:7px solid #8b6948}
+.room-ceiling-light{position:absolute;top:0;left:50%;width:22%;height:8px;transform:translateX(-50%);background:#24221d;box-shadow:0 7px 24px 5px #fff4c7}
+.room-art-frame{position:absolute;z-index:4;left:50%;top:13%;width:36%;height:47%;transform:translateX(-50%);padding:9px;background:#211e19;border:2px solid #c8a65b;box-shadow:0 7px 18px #23180f66, inset 0 0 0 4px #f3eee4}
+.room-art-frame img{display:block;width:100%;height:100%;object-fit:contain;background:#f5f0e7;border:4px solid #f2eee5}
+.room-view-label{position:absolute;z-index:10;left:14px;bottom:12px;color:#fff;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;text-shadow:0 2px 5px #000}
+.room-console{position:absolute;left:22%;right:22%;bottom:0;height:13%;background:linear-gradient(#744b2e,#4b3020);border-top:5px solid #a77b4d;box-shadow:0 -5px 12px #5a3d2833}
+.room-plant{position:absolute;bottom:0;width:9%;height:44%;background:linear-gradient(90deg,transparent 45%,#65523a 46% 52%,transparent 53%);border-bottom:18px solid #96714a}
+.plant-left{left:5%}.plant-right{right:6%}
+.room-plinth{position:absolute;bottom:0;left:8%;width:8%;height:28%;background:linear-gradient(90deg,#c2b49c,#897b67)}
+.room-sofa{position:absolute;z-index:3;left:19%;right:19%;bottom:-1%;height:29%;border-radius:22px 22px 5px 5px;background:linear-gradient(#d9c8ac,#aa967b);box-shadow:inset 0 8px #f2e9dc,0 -5px 15px #4a382222}
+.room-sofa i{display:inline-block;width:22%;height:58%;margin:4% 3%;border-radius:9px;background:#8e674a}
+.room-coffee-table{position:absolute;z-index:4;bottom:0;left:38%;width:24%;height:7%;border-radius:50%;background:#69472e;box-shadow:0 -7px 0 #9b744f}
+.room-headboard{position:absolute;z-index:2;left:24%;right:24%;bottom:0;height:35%;background:linear-gradient(#bca88c,#8b775e);border-radius:18px 18px 0 0}
+.room-bed{position:absolute;z-index:3;left:17%;right:17%;bottom:-2%;height:23%;background:linear-gradient(#f4eee3 0 30%,#c9bda9 31%);border-radius:10px 10px 0 0;box-shadow:0 -5px 12px #38281b22}
+.room-bed i{display:inline-block;width:30%;height:45%;margin:3% 9%;border-radius:8px;background:#fffaf0}
+.room-nightstand{position:absolute;z-index:3;left:8%;bottom:0;width:12%;height:22%;background:#775438;box-shadow:0 0 0 1px #4b3624}
+.room-desk{position:absolute;z-index:3;left:19%;right:19%;bottom:13%;height:5%;background:#68462d;box-shadow:0 5px 0 #4a3322}
+.room-office-chair{position:absolute;z-index:3;left:44%;bottom:0;width:12%;height:20%;border-radius:12px 12px 4px 4px;background:#544a3d}
+.room-bookcase{position:absolute;z-index:2;right:5%;bottom:0;width:12%;height:64%;background:repeating-linear-gradient(0deg,#735236 0 5px,#d2b991 5px 8px,#735236 8px 35px)}
+.room-dining-table{position:absolute;z-index:3;left:22%;right:22%;bottom:8%;height:7%;border-radius:50%;background:#68462d;box-shadow:0 8px 0 -2px #4b3020}
+.room-dining-chairs{position:absolute;z-index:2;left:15%;right:15%;bottom:0;height:24%;border-left:12px solid #594330;border-right:12px solid #594330}
+.room-vase{position:absolute;z-index:4;left:48%;bottom:15%;width:5%;height:12%;border-radius:40% 40% 30% 30%;background:#8c6b45}
+.room-living .room-art-frame{top:12%;width:35%;height:45%}
+.room-bedroom .room-art-frame{top:9%;width:33%;height:39%}
+.room-office .room-art-frame{top:10%;width:34%;height:43%}
+.room-dining .room-art-frame{top:10%;width:34%;height:43%}
+@media(max-width:600px){.room-stage{aspect-ratio:4/3}.room-art-frame{top:12%;width:43%;height:42%;padding:6px}.room-bedroom .room-art-frame{top:8%;height:35%}.room-view-label{font-size:.58rem}}
