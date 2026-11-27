@@ -108,11 +108,7 @@ function getFilteredArtworks() {
   });
 }
 
-function getModeImage(item, mode) {
-  if (mode && mode !== "art") {
-    if (item.room_imgs && item.room_imgs[mode]) return item.room_imgs[mode];
-    if (item.room_img) return item.room_img;
-  }
+function getModeImage(item) {
   return item.artwork_img;
 }
 
@@ -143,12 +139,6 @@ function renderGrid() {
         </div>
         <h4 class="art-title">${item.title}</h4>
         <p class="art-desc">${item.description}</p>
-        <div class="room-switcher">
-          <button type="button" class="room-chip ${mode === "art" ? "active" : ""}" data-mode="art">Artwork</button>
-          <button type="button" class="room-chip ${mode === "gallery" ? "active" : ""}" data-mode="gallery">Gallery</button>
-          <button type="button" class="room-chip ${mode === "loft" ? "active" : ""}" data-mode="loft">Loft</button>
-          <button type="button" class="room-chip ${mode === "lounge" ? "active" : ""}" data-mode="lounge">Lounge</button>
-        </div>
         <div class="art-actions">
           <button type="button" class="btn secondary save-btn ${isSaved ? "saved" : ""}">${isSaved ? "Saved" : "Save"}</button>
           <a class="btn primary" href="${item.pictorem_url}" target="_blank" rel="noopener">Order on Pictorem</a>
@@ -160,13 +150,6 @@ function renderGrid() {
       const globalIdx = artworks.findIndex((a) => a.id === item.id);
       openModal(globalIdx, mode);
     };
-
-    card.querySelectorAll(".room-chip").forEach((chip) => {
-      chip.onclick = () => {
-        viewModeById[item.id] = chip.dataset.mode;
-        renderGrid();
-      };
-    });
 
     card.querySelector(".save-btn").onclick = () => toggleShortlist(item.id);
 
@@ -200,21 +183,7 @@ function updateModal() {
   saveBtn.textContent = isSaved ? "Saved in Shortlist" : "Save to Shortlist";
   saveBtn.classList.toggle("saved", isSaved);
 
-  document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
-    chip.classList.toggle("active", chip.dataset.mode === modalMode);
-  });
-}
-
-document.querySelectorAll("#lightbox-room-bar .room-chip").forEach((chip) => {
-  chip.onclick = () => {
-    modalMode = chip.dataset.mode;
-    if (modalIndex >= 0) viewModeById[artworks[modalIndex].id] = modalMode;
-    updateModal();
-    renderGrid();
-  };
-});
-
-document.getElementById("lightbox-save").onclick = () => {
+  document.getElementById("lightbox-save").onclick = () => {
   if (modalIndex >= 0) toggleShortlist(artworks[modalIndex].id);
 };
 
