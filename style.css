@@ -371,3 +371,11 @@ a{transition:color .2s ease,border-color .2s ease,background .2s ease}
 .room-office .room-art-frame{top:10%;width:34%;height:43%}
 .room-dining .room-art-frame{top:10%;width:34%;height:43%}
 @media(max-width:600px){.room-stage{aspect-ratio:4/3}.room-art-frame{top:12%;width:43%;height:42%;padding:6px}.room-bedroom .room-art-frame{top:8%;height:35%}.room-view-label{font-size:.58rem}}
+
+/* Photographic mockups: use repository room photographs, not drawn CSS rooms. */
+.room-photo-stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#171411}
+.room-photo-stage .room-photo-background{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.room-photo-stage .room-view-label{z-index:8}
+.room-photo-art{position:absolute;left:50%;top:15%;width:25%;height:45%;transform:translateX(-50%);padding:8px;background:#171512;border:2px solid #c6a45a;box-shadow:0 7px 20px #0008,inset 0 0 0 4px #f4efe5;z-index:5}
+.room-photo-art img{display:block;width:100%;height:100%;object-fit:contain;background:#f5f0e7;border:3px solid #eee8dd}
+@media(max-width:600px){.room-photo-stage{aspect-ratio:4/3}.room-photo-art{top:12%;width:31%;height:43%;padding:5px}}
